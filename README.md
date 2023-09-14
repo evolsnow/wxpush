@@ -3,8 +3,12 @@
 ## 用法
 
 ### Docker
+`docker pull evolsnow/wxpush`
 
-本地构建镜像：
+`docker run -d --name wxpush -p 10000:10000 -v /local/path/to/config.yaml:/root/config.yaml evolsnow/wxpush`
+
+或者下载后本地构建镜像：
+
 `docker build -t local/wxpush:latest .`
 
 运行:

@@ -1,0 +1,13 @@
+listenPort: 10000
+clashPort: 10086
+proxy: # https://dreamacro.github.io/clash/configuration/outbound.html
+  name: "xxx"
+  type: ss
+  server: server
+  port: 12345
+  cipher: aes-128-gcm
+  password: "password"
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: a.b.com
